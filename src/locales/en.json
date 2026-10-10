@@ -9,7 +9,13 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "multiplayer": "Multiplayer",
+    "mechanics": "Mechanics",
+    "progression": "Progression",
+    "community": "Community",
+    "troubleshooting": "Troubleshooting"
   },
   "home": {
     "meta": {
@@ -371,7 +377,6 @@
       "secondary": "Play on Roblox"
     }
   },
-  "bosses": {},
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -407,5 +412,29 @@
     "buildGuide": "Strategy Guide",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "guide": {
+    "overviewTitle": "RALLY WITH A FRIEND Guides & Tutorials",
+    "overviewDescription": "Comprehensive beginner tutorials, controls guide, and driving tips for RALLY WITH A FRIEND."
+  },
+  "multiplayer": {
+    "overviewTitle": "RALLY WITH A FRIEND Multiplayer Modes",
+    "overviewDescription": "Complete instructions on playing with friends, co-op rally communication, and multiplayer sessions in RALLY WITH A FRIEND."
+  },
+  "mechanics": {
+    "overviewTitle": "RALLY WITH A FRIEND Game Mechanics",
+    "overviewDescription": "Explore core racing mechanics, pace note navigation systems, track layouts, and handling dynamics in RALLY WITH A FRIEND."
+  },
+  "progression": {
+    "overviewTitle": "RALLY WITH A FRIEND Progression & Cars",
+    "overviewDescription": "Discover how to unlock cars, complete stage achievements, and track your racing progression in RALLY WITH A FRIEND."
+  },
+  "community": {
+    "overviewTitle": "RALLY WITH A FRIEND Community & Codes",
+    "overviewDescription": "Stay connected with the RALLY WITH A FRIEND community, Discord servers, social channels, and game updates."
+  },
+  "troubleshooting": {
+    "overviewTitle": "RALLY WITH A FRIEND Troubleshooting & Support",
+    "overviewDescription": "Fix connection issues, resolve friend invite bugs, and solve common setup problems in RALLY WITH A FRIEND."
   }
 }

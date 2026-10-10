@@ -1,0 +1,185 @@
+export const metadata = {
+  title: "Como Corrigir Erros no Rally with a Friend ao Convidar Amigos e Falhas de Lobby",
+  description: "Solucione e corrija erros ao convidar amigos, quedas de lobby multijogador e falhas de sincronização de conexão no Rally with a Friend com este guia passo a passo.",
+  category: "troubleshooting",
+  date: "2026-10-11",
+};
+
+Acelerar por pistas de terra exigentes e curvas fechadas exige precisão, reflexos rápidos e trabalho em equipe impecável. Quando você está se preparando para uma sessão de rali cooperativo, encontrar uma falha no comando **Rally with a Friend invite friend** pode travar imediatamente o seu ritmo competitivo. Nada é mais frustrante do que ficar esperando no lobby pré-corrida por um parceiro que nunca recebe a sua notificação ou é jogado de volta para o menu principal. Aprender a configurar adequadamente sua rede, permissões de cliente e estado do lobby para solucionar o bug do **Rally with a Friend invite friend** garante que você e seu copiloto passem o tempo quebrando recordes de estágio em vez de encarar telas de carregamento.
+
+Os sistemas de corrida multijogador dependem fortemente de handshakes sincronizados entre cliente e host. Quando um convite trava, cai ou exibe o alerta genérico "sessão não está mais disponível", as camadas subjacentes de comunicação entre as sobreposições (overlays) do cliente e os servidores do jogo costumam estar desalinhadas. Este guia de solução de problemas detalha as principais causas de falhas nos convites cooperativos, orienta você por correções comprovadas no PC e em consoles, e explica como garantir sessões de rali multijogador sem interrupções.
+
+---
+
+## Principais Causas de Falhas no Lobby Co-Op de Rali
+
+Jogos modernos de corrida de rali implementam modos cooperativos e competitivos usando servidores de retransmissão dedicados ou redes peer-to-peer (P2P) diretas. Quando você usa o sistema de grupo (party) do jogo para trazer um parceiro para a sua garagem ou sessão de notas de ritmo, a sobreposição social da sua plataforma se comunica diretamente com o gerenciador de sessão do título. 
+
+Se houver qualquer atrito — como regras rígidas de firewall, tokens de cliente desatualizados, interferência de overlays em segundo plano ou interrupções no serviço de crossplay —, o convite para o lobby falha silenciosamente ou expira. Relatos da comunidade frequentemente mostram que os jogadores acreditam que os servidores do jogo estão offline, quando na verdade o problema decorre de configurações locais de privacidade ou tokens de conta corrompidos.
+
+Para identificar o que está dando errado ao tentar iniciar uma solicitação de **Rally with a Friend invite friend**, consulte a tabela de solução de problemas abaixo.
+
+| Indicador de Erro | Manifestação Comum | Causa Raiz Principal | Correção Rápida |
+| :--- | :--- | :--- | :--- |
+| **"Sessão Não Está Mais Disponível"** | Convite aceito, mas o cliente volta para a tela inicial | Instância de lobby desatualizada ou incompatibilidade de versão do cliente | Reinicie o jogo e gere um novo convite |
+| **Convite Fantasma (Sem Notificação)** | O host envia o convite, o convidado não recebe nada | Overlay social da plataforma desativado ou Não Perturbe ativado | Ative as notificações da overlay e verifique o status de privacidade |
+| **Ícone Infinito de "Entrando no Lobby"** | A roda de carregamento gira indefinidamente até expirar | Incompatibilidade de tipo de NAT ou portas UDP de jogos bloqueadas | Ative o UPnP ou configure o redirecionamento de portas |
+| **Erro de Autenticação de Crossplay** | Não é possível localizar a tag multiplataforma do amigo | Conta da publicadora desvinculada ou dessincronizada | Vincule a conta novamente pelo portal da publicadora |
+| **Código "Falha ao Conectar ao Host"** | A conexão cai exatamente em 95% do carregamento do estágio | Cache do jogo corrompido ou perda de pacotes no lado do host | Verifique a integridade dos arquivos e mude para uma conexão cabeada |
+
+---
+
+## Passo a Passo para Corrigir o Sistema de Convites
+
+Se o seu parceiro de corrida não conseguir entrar no seu lobby, abordar sistematicamente as barreiras de software e de plataforma é o caminho mais rápido para a solução. Antes de inspecionar configurações profundas do roteador, verifique as mecânicas essenciais da plataforma descritas abaixo.
+
+```
+Host Cria o Lobby ──► Envia Convite da Plataforma ──► Overlay do Convidado Recebe o Token ──► Handshake P2P/Servidor ──► Preparação do Estágio
+                                 │
+                     [Ponto de Falha: Overlay / Privacidade]
+                                 │
+                                 ▼
+                     Código Direto / Ressincronização de Sessão
+```
+
+### 1. Ressincronize as Overlays da Plataforma
+Os convites multijogador no jogo dependem fortemente da sobreposição (overlay) da plataforma (como Steam, Xbox Game Bar, PlayStation Network ou Epic Games). Se a overlay em segundo plano travar ou não tiver permissões do sistema, o envio do convite não gera nenhuma carga útil acionável.
+
+* **Usuários de PC:** Certifique-se de que a overlay da plataforma esteja explicitamente **Ativada** nas configurações do inicializador (launcher). Caso utilize um software antitrapaça de alto privilégio, tente executar o cliente do jogo como Administrador para evitar que a injeção da overlay seja bloqueada.
+* **Usuários de Console:** Verifique se o seu status online é exibido como "Online" em vez de "Aparecer Offline". Definir seu perfil como offline frequentemente oculta convites recebidos e enviados.
+
+### 2. Verifique as Permissões de Privacidade e Crossplay
+Os controles de privacidade projetados para bloquear mensagens não solicitadas podem inadvertidamente barrar solicitações de grupo vindas de amigos legítimos. Quando sua conta restringe o matchmaking de terceiros, a opção **Rally with a Friend invite friend** costuma ficar esmaecida ou falhar silenciosamente.
+
+Revise as configurações de permissão necessárias em cada ecossistema principal na tabela abaixo:
+
+| Plataforma | Localização no Menu | Configuração a Verificar | Configuração Ideal |
+| :--- | :--- | :--- | :--- |
+| **Steam** | Perfil > Editar Perfil > Configurações de Privacidade | Lista de Amigos e Detalhes dos Jogos | Definir ambos como "Público" ou "Apenas Amigos" |
+| **PlayStation 5** | Configurações > Usuários e Contas > Privacidade | "Quem pode interagir com você" | Alterar "Convites para Equipes" para "Apenas Amigos" ou "Qualquer Pessoa" |
+| **Xbox Series X/S** | Configurações > Conta > Privacidade e Segurança Online | Dados da Rede Xbox > Entrar em Partidas Multijogador | Garantir que "Permitir" esteja selecionado para redes externas |
+| **EA / ID da Publicadora** | Configurações da Conta > Privacidade | Visibilidade de Busca de Jogadores | Ativar "Permitir busca por e-mail e nome de exibição" |
+
+### 3. Alterne a Visibilidade do Lobby e Reagrupe-se
+Se um convite falhar uma vez, o token específico daquele lobby frequentemente fica preso em um estado de limbo nos servidores de backend. Para limpar o estado de conexão antes de tentar outra sequência de **Rally with a Friend invite friend**:
+1. Peça para o host voltar totalmente ao menu principal do jogo.
+2. Alterne a preferência de matchmaking de "Público" para "Privado" (ou vice-versa).
+3. Se o jogo oferecer códigos de sala ou IDs diretos de lobby, compartilhe o código numérico manualmente pelo bate-papo direto, em vez de depender estritamente dos pop-ups automatizados da plataforma.
+
+---
+
+## Resolvendo Restrições de Handshake de Rede e Tipo de NAT
+
+A sincronização peer-to-peer do estágio exige que os roteadores de ambos os jogadores negociem pacotes de entrada e saída sem descartes restritivos causados pelo firewall. Se qualquer um dos pilotos tiver um NAT (Network Address Translation) "Estrito" ou "Tipo 3", estabelecer uma sessão peer é praticamente impossível sem um servidor de retransmissão dedicado.
+
+Consulte o [guia oficial de suporte da Steam sobre solução de problemas de conexão multijogador](https://help.steampowered.com/en/faqs/view/22C0-77D0-F9E8-D293) para conhecer os requisitos padrão de sockets e as recomendações básicas de roteamento da plataforma.
+
+### Matriz de Compatibilidade de Tipos de NAT
+
+Compreender a classificação da sua rede permite determinar quem deve hospedar a sessão de corrida. Um host com NAT Aberto consegue intermediar conexões para jogadores com configurações mais restritivas:
+
+| Tipo de NAT do Host | Convidado: Aberto (Tipo 1) | Convidado: Moderado (Tipo 2) | Convidado: Estrito (Tipo 3) | Estabilidade Resultante da Sessão |
+| :--- | :--- | :--- | :--- | :--- |
+| **Aberto (Tipo 1)** | Totalmente Compatível | Totalmente Compatível | Compatível | Conexão ideal, picos mínimos de latência |
+| **Moderado (Tipo 2)** | Totalmente Compatível | Compatível | Alto Risco de Queda | Pequeno atraso no matchmaking, dessincronizações ocasionais |
+| **Estrito (Tipo 3)** | Compatível | Alto Risco de Queda | Incompatível (Falha) | Timeouts frequentes de lobby, convites fantasmas |
+
+### Como Melhorar o Status do seu NAT
+Se você notar que o fluxo de **Rally with a Friend invite friend** falha continuamente devido a roteamento restritivo:
+1. **Ative o UPnP (Universal Plug and Play):** Acesse o painel de administração do roteador da sua casa, vá até as configurações avançadas de rede e verifique se o UPnP está ativo. Isso permite que sua plataforma de jogos negocie portas abertas de forma dinâmica.
+2. **Atribua um IP Estático:** Defina um IP estático interno para seu PC ou console por meio da reserva de DHCP no seu roteador para evitar a expiração do aluguel da porta durante longas sessões multijogador.
+3. **Evite NAT Duplo (Double NAT):** Se você possui um modem fornecido pela operadora conectado a um roteador mesh secundário, configure o modem da operadora em "Modo Bridge" para que seu roteador principal gerencie o roteamento da rede diretamente.
+
+---
+
+## Fluxograma de Diagnóstico e Lista de Portas para Redirecionamento
+
+Quando as correções comuns não resolvem o loop de conexão do **Rally with a Friend invite friend**, fazer o redirecionamento manual de portas multijogador típicas de corrida pode eliminar perdas persistentes de pacotes. 
+
+Abaixo está uma lista direcionada de portas frequentemente utilizadas por motores de rali peer-to-peer e plataformas de jogos complementares:
+
+| Protocolo | Faixas de Portas | Finalidade | Destino Principal |
+| :--- | :--- | :--- | :--- |
+| **UDP** | 3074, 3478–3479 | Sincronização e telemetria de sessão peer no jogo | Clientes de Jogos em Consoles e PC |
+| **UDP** | 27015–27030 | Consulta de matchmaking e descoberta de servidores/lobbies | Steamworks / Relays de PC |
+| **TCP** | 80, 443 | Autenticação segura de conta e validação de token | Portais de Login da Publicadora |
+| **TCP/UDP** | 5223, 3658 | Chat de voz e canais de áudio secundários do copiloto | VoIP e Comunicação no Jogo |
+
+Siga este fluxo de diagnóstico estruturado para isolar se o problema está na sua máquina, na sua rede ou no servidor remoto:
+
+```
+[Iniciar Diagnóstico]
+          │
+          ▼
+O Jogo e o Cliente Estão Atualizados? ──► NÃO ──► Atualize Ambos os Clientes para o Mesmo Patch
+          │
+         SIM
+          │
+          ▼
+Ambos Conseguem Ver Amigos na Plataforma? ──► NÃO ──► Verifique o Status do Servidor e Privacidade
+          │
+         SIM
+          │
+          ▼
+O Convite Entrega o Código? ──► NÃO ──► Ative o Overlay no Jogo / Execute o Launcher como Admin
+          │
+         SIM
+          │
+          ▼
+Ocorre Timeout no Handshake? ──► SIM ──► Verifique os Tipos de NAT (Mude o Host para Jogador com NAT Aberto)
+          │
+         NÃO
+          │
+          ▼
+[Sessão de Rali Conectada com Sucesso]
+```
+
+---
+
+## Solução de Problemas Avançada: Cache, Sincronização e Conflitos com Antivírus
+
+Em simulações competitivas de rali onde cálculos de física, configurações de veículos e pinturas personalizadas são sincronizados entre os pilotos em co-op, até mesmo uma pequena corrupção de arquivos pode fazer com que o netcode rejeite um novo membro no grupo.
+
+### 1. Verifique a Integridade dos Arquivos
+Relatos da comunidade indicam com frequência que pequenas correções rápidas (hotfixes) podem deixar arquivos fragmentados na pasta de instalação. Quando dois jogadores executam versões ligeiramente divergentes, o servidor bloqueia a tentativa de entrada no lobby sem exibir um aviso claro de versão incompatível.
+* **Steam:** Clique com o botão direito no jogo na sua Biblioteca > **Propriedades** > **Arquivos Instalados** > **Verificar integridade dos arquivos do jogo**.
+* **Epic Games:** Clique nos três pontos abaixo do ícone do jogo > **Gerenciar** > **Verificar**.
+* **Consoles:** Limpe o cache do sistema desligando o console por completo, desconectando o cabo de energia por dois minutos e reiniciando o aparelho.
+
+### 2. Adicione Executáveis à Lista de Permissões do Windows Defender
+Suítes de segurança podem classificar hooks de netcode peer-to-peer como tráfego suspeito, interrompendo silenciosamente o handshake quando você tenta executar uma ação de **Rally with a Friend invite friend**.
+
+| Componente de Segurança | Ação Necessária | Localização nas Configurações do Windows |
+| :--- | :--- | :--- |
+| **Firewall do Windows Defender** | Permitir um aplicativo pelo firewall | Painel de Controle > Sistema e Segurança > Firewall |
+| **Proteção Antivírus em Tempo Real** | Adicionar exclusão para a pasta de instalação | Segurança do Windows > Proteção contra vírus e ameaças |
+| **Suítes de Internet de Terceiros** | Desativar filtragem ativa de SSL/HTTPS para jogos | Painel de filtros de rede específico do aplicativo |
+
+---
+
+## Boas Práticas para Sessões Estáveis com Copiloto e Estágios
+
+Depois de contornar com sucesso o bug do **Rally with a Friend invite friend** e entrar no mesmo lobby, manter a estabilidade da sessão ao longo de ralis extensos com múltiplos estágios exige manutenção preventiva do sistema. A implementação desses pequenos ajustes operacionais minimiza desconexões no meio da prova e quedas na comunicação de voz.
+
+1. **Use Conexões Diretas via Ethernet:** O Wi-Fi é suscetível a microquedas e perda repentina de pacotes (packet loss). Enquanto um pacote perdido pode passar despercebido em uma transmissão de vídeo, ele pode derrubar instantaneamente uma sessão de rali de alta velocidade com verificações rigorosas de latência.
+2. **Feche Aplicativos em Segundo Plano com Alto Consumo de Banda:** Torrents, backups em nuvem e uploads de vídeo consomem taxa de envio (upload), prejudicando diretamente a capacidade do host de sincronizar a telemetria com o convidado.
+3. **Sincronize o Bate-papo de Voz e os Lobbies do Jogo:** Se o chat de voz integrado ao jogo gerar sobrecarga desnecessária na CPU ou nos sockets, recorra a plataformas externas como Discord ou chat de grupo do próprio console, mantendo o grupo no jogo focado estritamente na telemetria e nos dados da pista.
+4. **Reinicie os Equipamentos de Rede Regularmente:** Os roteadores acumulam tabelas de estado e fragmentos de cache DNS que se degradam com o tempo. Reiniciar seu roteador uma vez por mês limpa alocações de portas obsoletas que poderiam interromper os convites para o lobby do jogo.
+
+Seguindo essa abordagem estruturada, você eliminará os gargalos de comunicação que impedem suas ações de **Rally with a Friend invite friend**, permitindo que você e seu parceiro voltem para a terra batida e foquem no pódio.
+
+---
+
+## Perguntas Frequentes (FAQ)
+
+### Por que meu amigo não consegue ver a notificação de convite que enviei no jogo?
+Se o seu companheiro de equipe não receber notificações ao usar a função **Rally with a Friend invite friend**, o mais provável é que o overlay da plataforma dele esteja desativado ou suprimido pelo status "Não Perturbe". Peça para seu amigo verificar se a sobreposição do inicializador do jogo está ativada nas configurações e garanta que as permissões de privacidade social dele permitam convites de grupo vindos de amigos.
+
+### Podemos correr juntos se um de nós estiver no PC e o outro no console?
+Sim, desde que o título de rali em questão ofereça suporte a crossplay. Para conectar entre diferentes plataformas, ambos os pilotos geralmente precisam vincular suas contas do console ou da plataforma ao sistema de conta central da publicadora. Procurem um ao outro utilizando o nome de exibição exato ou a tag numérica da publicadora, em vez das gamertags padrão da plataforma.
+
+### O que devemos fazer se a tela de carregamento do lobby travar em 99%?
+Esse sintoma geralmente indica que o cliente do convidado não consegue baixar ou verificar a pintura do carro, os dados do estágio ou os parâmetros de física do host. Peça para ambos os jogadores verificarem a integridade da instalação do jogo, garantirem que todas as atualizações e DLCs de estágios sejam idênticas nos dois sistemas, e tentem inverter o papel de host da sessão.
+
+### O nosso tipo de NAT realmente importa se estivermos jogando por meio de um convite oficial?
+Sim. Muitos jogos de corrida dependem da replicação de dados ponto a ponto (peer-to-peer) assim que o lobby inicial é formado pelo servidor de matchmaking. Se ambos os pilotos tiverem NAT Estrito (Tipo 3), seus roteadores descartarão os pacotes de dados diretos necessários para sincronizar a telemetria do carro, fazendo com que o convite falhe ou caia logo após o início do carregamento. Garantir que pelo menos um jogador tenha NAT Aberto (Tipo 1) ou Moderado (Tipo 2) resolve a grande maioria das quedas de handshake.

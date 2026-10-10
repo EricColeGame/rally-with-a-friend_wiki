@@ -1,0 +1,185 @@
+export const metadata = {
+  title: "Cómo solucionar los errores al invitar amigos y fallos de sala en Rally with a Friend",
+  description: "Soluciona los errores al invitar amigos en Rally with a Friend, caídas de salas multijugador y fallos de sincronización con esta guía paso a paso.",
+  category: "troubleshooting",
+  date: "2026-10-11",
+};
+
+Recorrer exigentes pistas de tierra y curvas cerradas requiere precisión, reflejos en fracciones de segundo y un trabajo en equipo impecable. Cuando te preparas para una sesión cooperativa de rally, toparte con un aviso defectuoso de **Rally with a Friend invite friend** puede frenar en seco tu ritmo competitivo. No hay nada más frustrante que esperar en la sala previa a la carrera a un compañero que nunca recibe tu notificación o que termina expulsado al menú principal. Aprender a configurar adecuadamente tu red, los permisos del cliente y el estado de la sala para resolver el fallo de **Rally with a Friend invite friend** garantizará que tú y tu copiloto paséis el tiempo batiendo récords de tramo en lugar de contemplar pantallas de carga.
+
+Los sistemas de carreras multijugador dependen en gran medida de sincronizaciones constantes entre el cliente y el anfitrión. Cuando una invitación se congela, se cae o muestra una alerta genérica de "la sesión ya no está disponible", suele deberse a un desajuste en las capas de comunicación subyacentes entre las superposiciones del cliente y los servidores del juego. Esta guía de solución de problemas analiza las causas fundamentales de los fallos de invitación cooperativa, te guía a través de soluciones comprobadas tanto en PC como en consolas, y detalla cómo garantizar sesiones de rally multijugador sin interrupciones.
+
+---
+
+## Causas comunes de los fallos en las salas cooperativas de rally
+
+Los juegos de rally modernos implementan modos cooperativos y competitivos utilizando servidores de retransmisión dedicados o redes directas peer-to-peer (P2P). Cuando utilizas el sistema de grupos del juego para invitar a un compañero a tu garaje o a una sesión de notas de ritmo, la superposición social de tu plataforma se comunica directamente con el gestor de sesiones del título.
+
+Si surge algún conflicto —como reglas estrictas de firewall, tokens de cliente obsoletos, interferencias de superposiciones en segundo plano o caídas del servicio de juego cruzado (crossplay)—, la invitación a la sala falla en silencio o se agota el tiempo de espera. Los informes de la comunidad muestran con frecuencia que los jugadores asumen que los servidores están caídos cuando, en realidad, el problema radica en los ajustes de privacidad locales o en tokens de cuenta caducados.
+
+Para identificar qué está fallando cuando intentas enviar una solicitud de **Rally with a Friend invite friend**, consulta la siguiente tabla de diagnóstico.
+
+| Indicador de error | Manifestación común | Causa principal | Solución rápida |
+| :--- | :--- | :--- | :--- |
+| **"Sesión ya no disponible"** | Invitación aceptada, pero el cliente vuelve a la pantalla de inicio | Instancia de sala desactualizada o versiones del cliente distintas | Reiniciar el juego y generar una invitación nueva |
+| **Invitación fantasma (sin notificación)** | El anfitrión envía la invitación, el invitado no recibe nada | Superposición social desactivada o modo "No molestar" activo | Activar notificaciones de superposición y revisar privacidad |
+| **Carga infinita ("Uniéndose a la sala")** | La rueda de carga gira indefinidamente hasta expirar | Incompatibilidad de NAT o puertos UDP de juego bloqueados | Habilitar UPnP o configurar el reenvío de puertos |
+| **Error de autenticación de Crossplay** | Imposible localizar la ID multiplataforma del amigo | Cuenta de la distribuidora desvinculada o desincronizada | Volver a vincular la cuenta mediante el portal oficial |
+| **Código "Error al unirse al anfitrión"** | La conexión se cae exactamente al 95% de carga del tramo | Caché del juego dañada o pérdida de paquetes en el anfitrión | Verificar integridad de archivos y usar conexión por cable |
+
+---
+
+## Soluciones paso a paso para el sistema de invitaciones
+
+Si tu compañero de carreras no puede unirse a tu sala, abordar de forma sistemática los obstáculos a nivel de software y plataforma es la vía más rápida para resolverlo. Antes de inspeccionar configuraciones avanzadas del router, comprueba las funciones básicas de la plataforma descritas a continuación.
+
+```
+Anfitrión crea sala ──► Envía invitación ──► Invitado recibe token ──► Negociación P2P/Servidor ──► Parrilla de salida
+                                 │
+                     [Punto de fallo: Superposición / Privacidad]
+                                 │
+                                 ▼
+                     Código directo / Resincronización de sesión
+```
+
+### 1. Resincronizar las superposiciones de la plataforma
+Las invitaciones multijugador integradas dependen en gran medida de la superposición de la plataforma (como Steam, Xbox Game Bar, PlayStation Network o Epic Games). Si la superposición en segundo plano falla o carece de permisos del sistema, el envío de la invitación no genera ninguna acción.
+
+* **Usuarios de PC:** Asegúrate de que la superposición de la plataforma esté explícitamente **activada** en los ajustes del lanzador. Si ejecutas programas antitrampas con privilegios elevados, inicia el cliente del juego como Administrador para evitar que se bloquee el enlace de la superposición.
+* **Usuarios de consola:** Comprueba que tu estado en línea figure como "Conectado" y no como "Aparecer desconectado". Configurar el perfil como desconectado suele ocultar tanto las invitaciones entrantes como las salientes.
+
+### 2. Verificar los permisos de privacidad y juego cruzado
+Los controles de privacidad diseñados para bloquear mensajes no deseados pueden impedir accidentalmente las solicitudes de grupo de amigos legítimos. Cuando tu cuenta restringe el emparejamiento con terceros, la opción **Rally with a Friend invite friend** a menudo aparecerá atenuada o se cancelará silenciosamente.
+
+Revisa los ajustes de permisos necesarios en cada ecosistema principal en la siguiente tabla:
+
+| Plataforma | Ubicación del menú | Ajuste a revisar | Configuración óptima |
+| :--- | :--- | :--- | :--- |
+| **Steam** | Perfil > Modificar perfil > Configuración de privacidad | Lista de amigos y detalles de juegos | Establecer ambos en "Público" o "Solo amigos" |
+| **PlayStation 5** | Ajustes > Usuarios y cuentas > Privacidad | "¿Quién puede interactuar contigo?" | Cambiar "Invitaciones de equipo" a "Solo amigos" o "Cualquiera" |
+| **Xbox Series X/S** | Configuración > Cuenta > Privacidad y seguridad en línea | Datos de red de Xbox > Unirse a partidas multijugador | Asegurarse de que esté en "Permitir" para redes externas |
+| **EA / ID de distribuidora** | Ajustes de cuenta > Privacidad | Visibilidad en búsqueda de jugadores | Activar "Permitir búsqueda por correo y nombre público" |
+
+### 3. Alternar la visibilidad de la sala y reagruparse
+Si una invitación falla una vez, ese token de sala específico suele quedar bloqueado en un estado indefinido en el servidor central. Para limpiar el estado de la conexión antes de intentar otra secuencia de **Rally with a Friend invite friend**:
+1. Haz que el anfitrión regrese completamente al menú principal del juego.
+2. Cambia la preferencia de emparejamiento de "Pública" a "Privada" (o viceversa).
+3. Si el juego ofrece códigos de sala o identificadores directos, comparte el código numérico manualmente a través del chat directo en lugar de depender únicamente de las ventanas emergentes automáticas de la plataforma.
+
+---
+
+## Resolución de restricciones de enlace de red y tipo de NAT
+
+La sincronización de tramos punto a punto (P2P) requiere que los routers de ambos jugadores negocien paquetes entrantes y salientes sin que un firewall estricto descarte datos. Si alguno de los pilotos tiene una NAT (traducción de direcciones de red) "Estricta" o de "Tipo 3", establecer una sesión P2P es prácticamente imposible sin un servidor de retransmisión dedicado.
+
+Consulta la [guía oficial de soporte de Steam sobre solución de problemas de conexión multijugador](https://help.steampowered.com/en/faqs/view/22C0-77D0-F9E8-D293) para conocer los requisitos estándar de sockets y las recomendaciones de enrutamiento básicas.
+
+### Matriz de compatibilidad de tipos de NAT
+
+Comprender la clasificación de tu red te permite determinar quién debe ejercer de anfitrión en la sesión de carreras. Un anfitrión con NAT abierta puede enlazar conexiones con jugadores que tengan configuraciones más restrictivas:
+
+| NAT del anfitrión | Invitado: Abierta (Tipo 1) | Invitado: Moderada (Tipo 2) | Invitado: Estricta (Tipo 3) | Estabilidad resultante de la sesión |
+| :--- | :--- | :--- | :--- | :--- |
+| **Abierta (Tipo 1)** | Totalmente compatible | Totalmente compatible | Compatible | Conexión óptima, picos de latencia mínimos |
+| **Moderada (Tipo 2)** | Totalmente compatible | Compatible | Alto riesgo de desconexión | Leve demora de emparejamiento, desincronización ocasional |
+| **Estricta (Tipo 3)** | Compatible | Alto riesgo de desconexión | Incompatible (Falla) | Tiempos de espera agotados frecuentes, invitaciones fantasma |
+
+### Cómo mejorar tu estado de NAT
+Si descubres que el proceso de **Rally with a Friend invite friend** falla continuamente debido a un enrutamiento estricto:
+1. **Activa UPnP (Universal Plug and Play):** Accede al panel de administración del router de tu hogar, dirígete a los ajustes avanzados de red y asegúrate de que UPnP esté activo. Esto permite que tu plataforma de juegos negocie puertos abiertos dinámicamente.
+2. **Asigna una IP estática:** Asigna a tu PC o consola una IP estática interna mediante la reserva DHCP en tu router para evitar que expire la concesión de puertos durante sesiones multijugador prolongadas.
+3. **Evita la doble NAT:** Si tienes un módem/puerta de enlace de tu proveedor de Internet conectado a un router mesh independiente, configura el dispositivo del proveedor en "Modo puente" (Bridge Mode) para que tu router principal gestione el enrutamiento directamente.
+
+---
+
+## Diagrama de diagnóstico y lista de reenvío de puertos
+
+Cuando las soluciones convencionales no resuelvan el bucle de conexión de **Rally with a Friend invite friend**, reenviar manualmente los puertos multijugador habituales de carreras puede eliminar la pérdida persistente de paquetes.
+
+A continuación, se muestra una lista de puertos frecuentemente utilizados por motores de rally punto a punto y plataformas de juego asociadas:
+
+| Protocolo | Rangos de puertos | Finalidad | Destino principal |
+| :--- | :--- | :--- | :--- |
+| **UDP** | 3074, 3478–3479 | Sincronización de sesión y telemetría en partida | Clientes de juego en PC y consolas |
+| **UDP** | 27015–27030 | Peticiones de emparejamiento y detección de salas | Steamworks / Servidores de PC |
+| **TCP** | 80, 443 | Autenticación segura de cuenta y validación de tokens | Portales de inicio de sesión de la distribuidora |
+| **TCP/UDP** | 5223, 3658 | Chat de voz y flujo de audio del copiloto | VoIP y comunicaciones integradas |
+
+Sigue este flujo de diagnóstico estructurado para aislar si el problema se encuentra en tu equipo, en tu red o en el servidor remoto:
+
+```
+[Iniciar diagnóstico]
+          │
+          ▼
+¿Juego y cliente actualizados? ──► NO ──► Actualizar ambos clientes al mismo parche
+          │
+          SÍ
+          │
+          ▼
+¿Ambos ven a sus amigos en la plataforma? ──► NO ──► Revisar estado del servidor y ajustes de privacidad
+          │
+          SÍ
+          │
+          ▼
+¿La invitación entrega el código? ──► NO ──► Activar superposición / Ejecutar cliente como Admin
+          │
+          SÍ
+          │
+          ▼
+¿Se agota el tiempo de enlace? ──► SÍ ──► Comprobar tipos de NAT (Cambiar anfitrión al jugador con NAT abierta)
+          │
+          NO
+          │
+          ▼
+[Sesión de rally conectada con éxito]
+```
+
+---
+
+## Solución avanzada de problemas: conflictos de caché, sincronización y antivirus
+
+En los simuladores de rally competitivos, donde los cálculos de física, los reglajes de los vehículos y los diseños personalizados se sincronizan entre los pilotos cooperativos, la más mínima discrepancia de archivos puede provocar que el código de red rechace a un miembro del grupo.
+
+### 1. Verificar la integridad de los archivos
+Los informes de la comunidad indican con frecuencia que los parches pequeños pueden dejar archivos fragmentados en la carpeta de instalación. Cuando dos jugadores ejecutan compilaciones ligeramente distintas, el servidor bloqueará el intento de unión a la sala sin mostrar una advertencia clara sobre la versión.
+* **Steam:** Haz clic derecho en el juego en tu Biblioteca > **Propiedades** > **Archivos instalados** > **Verificar la integridad de los archivos del juego**.
+* **Epic Games:** Haz clic en los tres puntos debajo del mosaico del juego > **Administrar** > **Verificar**.
+* **Consolas:** Limpia la memoria caché del sistema apagando la consola por completo, desconectando el cable de alimentación durante dos minutos y reiniciándola.
+
+### 2. Crear excepciones para los ejecutables en Windows Defender
+Los programas de seguridad pueden catalogar los enlaces de red P2P como tráfico sospechoso, cortando la negociación en silencio cuando intentas realizar una llamada de **Rally with a Friend invite friend**.
+
+| Componente de seguridad | Acción requerida | Ubicación en los ajustes de Windows |
+| :--- | :--- | :--- |
+| **Firewall de Windows Defender** | Permitir que una aplicación se comunique a través del firewall | Panel de control > Sistema y seguridad > Firewall |
+| **Protección antivirus en tiempo real** | Añadir exclusión para la carpeta de instalación | Seguridad de Windows > Protección contra virus y amenazas |
+| **Suites de seguridad de terceros** | Desactivar el filtrado SSL/HTTPS activo en juegos | Panel de filtros de red de la aplicación específica |
+
+---
+
+## Buenas prácticas para sesiones estables de copiloto y tramos
+
+Una vez que hayas superado el error de **Rally with a Friend invite friend** y te encuentres en la misma sala, mantener la estabilidad de la sesión a lo largo de extensos rallies de varios tramos requiere un mantenimiento proactivo del sistema. La implementación de estos pequeños ajustes operativos minimiza las desconexiones a mitad de tramo y los cortes en la comunicación por voz.
+
+1. **Utiliza conexiones directas por Ethernet:** La conexión Wi-Fi es propensa a pérdidas de paquetes por microinterrupciones. Aunque la pérdida de un paquete pase inadvertida en un vídeo en streaming, puede interrumpir al instante una sesión de rally a alta velocidad sujeta a estrictos controles de latencia.
+2. **Cierra aplicaciones en segundo plano que consuman ancho de banda:** Descargas torrent, copias de seguridad en la nube y subidas de vídeo consumen ancho de banda de subida, lo que reduce directamente la capacidad del anfitrión para sincronizar la telemetría con el invitado.
+3. **Sincroniza las salas de voz y del juego:** Si el chat de voz integrado añade una carga innecesaria a la CPU o a los sockets, utiliza canales de comunicación externos como Discord o el chat de grupo de la consola, reservando el tráfico del juego exclusivamente para la telemetría y los datos del trazado.
+4. **Reinicia periódicamente los equipos de red:** Los routers acumulan tablas de estado y fragmentos de caché DNS que se degradan con el tiempo. Reiniciar tu router una vez al mes limpia asignaciones de sockets obsoletas que de otro modo podrían interferir con las invitaciones a salas de juego.
+
+Siguiendo este enfoque estructurado, eliminarás los cuellos de botella de comunicación que bloquean tus acciones de **Rally with a Friend invite friend**, permitiendo que tú y tu compañero volváis a la grava y os concentréis en alcanzar el podio.
+
+---
+
+## Preguntas frecuentes (FAQ)
+
+### ¿Por qué mi amigo no puede ver la notificación de invitación que le envié dentro del juego?
+Si tu compañero de equipo no recibe notificaciones cuando utilizas la función **Rally with a Friend invite friend**, lo más probable es que la superposición de su plataforma esté desactivada o silenciada por un estado de perfil en "No molestar". Pídele a tu amigo que verifique que la superposición del lanzador del juego esté activada en los ajustes y comprueba que sus permisos de privacidad social permitan recibir invitaciones de grupo de amigos.
+
+### ¿Podemos correr juntos si uno de nosotros está en PC y el otro en consola?
+Sí, siempre y cuando el título de rally en cuestión admita juego cruzado (crossplay). Para conectar entre diferentes plataformas, ambos pilotos generalmente deben vincular sus cuentas de consola o plataforma al sistema de cuentas central de la distribuidora. Buscaos mutuamente utilizando el nombre de usuario exacto de la distribuidora o la etiqueta numérica, en lugar de los gamertags estándar de la consola.
+
+### ¿Qué debemos hacer si la pantalla de carga de la sala se queda congelada en el 99%?
+Este síntoma suele indicar que el cliente del invitado no puede descargar o verificar el diseño del coche, los datos del tramo o los parámetros de física del anfitrión. Ambos jugadores deben verificar la integridad de la instalación del juego, asegurarse de que todas las actualizaciones y tramos DLC coincidan en ambos sistemas y probar a que sea el otro jugador quien cree la sesión.
+
+### ¿Realmente importa el tipo de NAT si estamos jugando mediante una invitación oficial?
+Sí. Muchos títulos de carreras dependen de la replicación de datos peer-to-peer una vez que la sala inicial se forma a través del servidor de emparejamiento. Si ambos jugadores tienen una NAT Estricta (Tipo 3), sus routers descartarán los paquetes directos requeridos para sincronizar la telemetría del coche, haciendo que la invitación falle o se desconecte inmediatamente al comenzar la carga. Asegurar que al menos un jugador disponga de una NAT Abierta (Tipo 1) o Moderada (Tipo 2) soluciona la inmensa mayoría de las caídas de enlace.
