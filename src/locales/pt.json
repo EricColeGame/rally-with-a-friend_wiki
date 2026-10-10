@@ -1,1 +1,440 @@
-{}
+{
+  "site": {
+    "name": "RALLY WITH A FRIEND Wiki",
+    "shortName": "RALLY WITH A FRIEND",
+    "tagline": "Códigos, guias, carros e dicas",
+    "description": "Explore a Wiki de RALLY WITH A FRIEND para guias de corrida, dicas de pilotagem, dados de veículos, atualizações e tudo para a experiência cooperativa.",
+    "legalNotice": "Wiki não oficial criada por fãs. Feita por jogadores, para jogadores."
+  },
+  "nav": {
+    "home": "Início",
+    "menu": "Menu",
+    "toggleTheme": "Alternar tema",
+    "guide": "Guia",
+    "multiplayer": "Multijogador",
+    "mechanics": "Mecânicas",
+    "progression": "Progressão",
+    "community": "Comunidade",
+    "troubleshooting": "Solução de problemas"
+  },
+  "home": {
+    "meta": {
+      "title": "RALLY WITH A FRIEND Wiki - Códigos, guias e novidades",
+      "description": "Explore a Wiki de RALLY WITH A FRIEND para guias de corrida, dicas de pilotagem, dados de veículos, atualizações e corridas cooperativas."
+    },
+    "hero": {
+      "eyebrow": "Aventura de corrida cooperativa",
+      "title": "RALLY WITH A FRIEND Wiki",
+      "description": "RALLY WITH A FRIEND é um jogo de corrida multijugador cooperativo focado em trabalho em equipe, desafios na pista e corridas com amigos.",
+      "stats": [
+        "Guias de corrida",
+        "Estatísticas dos carros",
+        "Códigos ativos",
+        "Atualizações diárias"
+      ],
+      "primaryCta": "Guia de iniciantes",
+      "secondaryCta": "Guias de veículos",
+      "tertiaryCta": "Códigos ativos",
+      "videoLabel": "Mídia oficial"
+    },
+    "updates": {
+      "title": "Últimas atualizações",
+      "browse": "Ver todos os guias",
+      "viewAll": "Ver tudo"
+    },
+    "start": {
+      "eyebrow": "Comece aqui",
+      "title": "Sua jornada em RALLY WITH A FRIEND",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guia de iniciantes",
+          "description": "Domine as funções de piloto e copiloto, ritmo dos trechos e sincronização da cabine desde a sua primeira etapa de rali."
+        },
+        {
+          "number": "2",
+          "title": "Progressão rápida e novos carros",
+          "description": "Desbloqueie classes superiores, desde compactos FWD clássicos até monstros turbo AWD do Grupo B com as melhores notas de setor."
+        },
+        {
+          "number": "3",
+          "title": "Resgatar códigos ativos",
+          "description": "Garanta dinheiro no jogo, recargas de nitro, bônus de aderência e pinturas exclusivas antes que os códigos expirem."
+        },
+        {
+          "number": "4",
+          "title": "Controles e chamadas de notas",
+          "description": "Aprenda os atalhos de direção, sensibilidade de giro e a escala de intensidade de curvas para cada trecho."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Em alta agora",
+      "quickLinks": [
+        "Tier List de carros",
+        "Notas de ritmo",
+        "Códigos ativos",
+        "Guias de trechos"
+      ],
+      "cards": [
+        {
+          "badge": "Iniciante",
+          "title": "Guia de iniciantes",
+          "description": "Tudo o que você precisa desde a largada até traçados em dupla e comunicação afinada em equipe.",
+          "href": "/guide/rally-with-a-friend-beginner-guide"
+        },
+        {
+          "badge": "Atualizado",
+          "title": "Códigos ativos",
+          "description": "Todos os códigos válidos com recompensas prontas para resgate antes do vencimento.",
+          "href": "/community/rally-with-a-friend-codes"
+        },
+        {
+          "badge": "Popular",
+          "title": "Tier List dos melhores carros",
+          "description": "Carros de rali classificados por dirigibilidade, velocidade final e estabilidade fora de estrada.",
+          "href": "/progression/rally-with-a-friend-best-car"
+        },
+        {
+          "badge": "Essencial",
+          "title": "Controles e comandos",
+          "description": "Configurações de teclado, layout para controles e ajustes para partidas cooperativas.",
+          "href": "/guide/rally-with-a-friend-controls"
+        },
+        {
+          "badge": "Mecânicas",
+          "title": "Pistas e física de superfícies",
+          "description": "Domine a dinâmica sobre cascalho, asfalto, terra e lama em todas as etapas.",
+          "href": "/mechanics/rally-with-a-friend-tracks"
+        },
+        {
+          "badge": "Popular",
+          "title": "Guia de conquistas",
+          "description": "Complete todos os marcos cooperativos, metas de setor limpo e troféus de campeonato.",
+          "href": "/progression/rally-with-a-friend-achievements"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "O que é RALLY WITH A FRIEND?",
+      "paragraphs": [
+        "RALLY WITH A FRIEND é um jogo de corrida cooperativo no Roblox repleto de adrenalina, focado em alta velocidade com trabalho em equipe, navegação técnica e dinâmica autêntica de rali. Um jogador comanda o volante para superar terrenos imprevisíveis enquanto o copiloto canta as notas de ritmo essenciais para antecipar grampos, saltos e lombadas cegas.",
+        "Desde compactos clássicos com tração dianteira até bólidos turbo de tração integral do lendário Grupo B, a vitória depende de comunicação clara e controle fino do acelerador no asfalto, cascalho e lama. Nossa wiki traz catálogo de veículos, física de terrenos, mapeamento de controles e guias de etapas para sua dupla liderar o placar."
+      ],
+      "stats": [
+        {
+          "label": "Plataforma",
+          "value": "Roblox"
+        },
+        {
+          "label": "Gênero",
+          "value": "Corrida cooperativa"
+        },
+        {
+          "label": "Modo de equipe",
+          "value": "Co-op de 2 jogadores"
+        },
+        {
+          "label": "Etapas",
+          "value": "Múltiplas superfícies"
+        },
+        {
+          "label": "Classes",
+          "value": "5 Categorias"
+        },
+        {
+          "label": "Códigos ativos",
+          "value": "Atualizados"
+        }
+      ],
+      "cta": "Explorar todos os guias"
+    },
+    "explore": {
+      "title": "Explore a Wiki de RALLY WITH A FRIEND",
+      "description": "Domine cada curva e chamada de navegação com tier lists de veículos, guías de pistas, configurações de controles e estratégias para todas as etapas.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Guia de iniciantes de RALLY WITH A FRIEND",
+          "description": "Este módulo explica a dinâmica básica, os papéis de cada jogador e como completar etapas com um parceiro. Aborda controles, comunicação e dicas para novatos.",
+          "href": "/guide/rally-with-a-friend-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Escolha o carro e defina as funções de piloto e copiloto antes da largada."
+            },
+            {
+              "label": "2",
+              "detail": "Ajuste a comunicação por voz ou termos curtos para chamadas de notas nítidas."
+            },
+            {
+              "label": "3",
+              "detail": "O piloto controla aceleração, frenagem e derrapagens Scandinavian flick nos grampos."
+            },
+            {
+              "label": "4",
+              "detail": "Cruzem os postos de controle juntos sem danos fatais para garantir nota de ouro."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Guia de jogabilidade de RALLY WITH A FRIEND",
+          "description": "Esta seção detalha o sistema de rali cooperativo, responsabilidades de condutor e copiloto, mecânicas das pistas e estratégias para excelente coordenação.",
+          "href": "/guide/rally-with-a-friend-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Piloto",
+              "detail": "Controla a modulação do acelerador, transferência de peso e tangência das curvas."
+            },
+            {
+              "label": "Copiloto",
+              "detail": "Antecipa alertas de curvas fechadas, lombadas cegas e inclinações da pista."
+            },
+            {
+              "label": "Dupla em Co-Op",
+              "detail": "Mantém comunicação constante para sobreviver a setores cegos em alta velocidade."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Guia de carros de RALLY WITH A FRIEND",
+          "description": "Este módulo foca nos veículos disponíveis, personalizações e desempenho para escolher o carro perfeito para o seu estilo de pilotagem.",
+          "href": "/progression/rally-with-a-friend-best-car",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Hatchback Turbo AWD Grupo B e picape Twin-Turbo Rally Raid com velocidade máxima e recuperação rápida."
+            },
+            {
+              "label": "A",
+              "detail": "Lendas Turbo dos anos 90 e modelos Spec modernos com ótima estabilidade em derrapagem."
+            },
+            {
+              "label": "B",
+              "detail": "Coupés RWD clássicos que recompensam aceleração suave no asfalto seco."
+            },
+            {
+              "label": "C",
+              "detail": "Modelos Vintage Cup FWD feitos para treinar a base das provas de rali."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Guia de pistas de RALLY WITH A FRIEND",
+          "description": "Abrange cenários de rali, trechos de prova, clima e particularidades do terreno para se preparar para qualquer traçado.",
+          "href": "/mechanics/rally-with-a-friend-tracks",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Asfalto seco",
+              "detail": "Alta aderência (0.95-1.0) ideal para traçados clássicos com tangência tardia."
+            },
+            {
+              "label": "Cascalho solto",
+              "detail": "Exige derrapagens por inércia e retomada antecipada com +35% na distância de frenagem."
+            },
+            {
+              "label": "Terra batida",
+              "detail": "Superfície equilibrada que requer controle de derrapagem e aceleração no meio da pista."
+            },
+            {
+              "label": "Lama profunda",
+              "detail": "Pouca tração exigindo giro alto e embalo contínuo para não atolar o chassi."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Guia de controles de RALLY WITH A FRIEND",
+          "description": "Lista os controles indispensáveis para pilotos e navegadores, incluindo direção, atalhos de voz e comandos nas etapas.",
+          "href": "/guide/rally-with-a-friend-controls",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "W / Cima",
+              "detail": "Aceleração principal e controle de velocidade nos trechos da prova."
+            },
+            {
+              "label": "S / Baixo",
+              "detail": "Pedal de freio e marcha ré para manobras rápidas após grampos fechados."
+            },
+            {
+              "label": "A / D",
+              "detail": "Giro do volante e controle de ângulo no contra-esterço."
+            },
+            {
+              "label": "Espaço",
+              "detail": "Freio de mão para acionar derrapagens Scandinavian flick em alta velocidade."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Atualizações de RALLY WITH A FRIEND",
+          "description": "Reúne novidades oficiais, novos recursos, balanceamentos e conteúdos para acompanhar a evolução do jogo.",
+          "href": "/community/rally-with-a-friend-codes",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Patches",
+              "detail": "Ajustes regulares na física de suspensão, aderência de pneus e resposta do motor."
+            },
+            {
+              "label": "Novos trechos",
+              "detail": "Variantes climáticas incluindo etapas noturnas, chuva torrencial e neblina densa."
+            },
+            {
+              "label": "Códigos bônus",
+              "detail": "Códigos promocionais com moedas extras, nitro e itens cosméticos exclusivos."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Dicas e truques de RALLY WITH A FRIEND",
+          "description": "Dicas avançadas de corrida, técnicas de comunicação e táticas para reduzir os tempos de trecho e melhorar a sintonia em equipe.",
+          "href": "/guide/rally-with-a-friend-tips",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Notas de ritmo",
+              "detail": "Cante as curvas 1 ou 2 setores antes para que o piloto posicione o carro com calma."
+            },
+            {
+              "label": "Scandinavian Flick",
+              "detail": "Transfira o peso para frente antes de entrar no cascalho para carregar as molas dianteiras."
+            },
+            {
+              "label": "Cuidado com zebras",
+              "detail": "Evite bater forte nas zebras para proteger o radiador e o alinhamento da suspensão."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Guia de conquistas de RALLY WITH A FRIEND",
+          "description": "Mostra conquistas, emblemas e metas para cumprir durante a progressão do jogo, ideal para quem busca 100%.",
+          "href": "/progression/rally-with-a-friend-achievements",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Novato",
+              "detail": "Complete 3 trechos de terreno misto com um parceiro para obter a certificação de novato."
+            },
+            {
+              "label": "Clubman",
+              "detail": "Complete um campeonato de 5 etapas com zero penalidades por colisão."
+            },
+            {
+              "label": "Navegador",
+              "detail": "Registre 100% de precisão nas notas de ritmo durante etapas noturnas desafiadoras."
+            },
+            {
+              "label": "Mestre",
+              "detail": "Conquiste medalhas de ouro em condições extremas de tempestade, nevasca e neblina."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "description": "Respostas rápidas para as dúvidas mais comuns sobre RALLY WITH A FRIEND.",
+      "items": [
+        {
+          "question": "O que é RALLY WITH A FRIEND?",
+          "answer": "RALLY WITH A FRIEND é um jogo de corrida cooperativo no Roblox onde dois jogadores formam uma dupla de piloto e copiloto em pistas de terra, cascalho e asfalto."
+        },
+        {
+          "question": "Como funciona o trabalho em equipe no RALLY WITH A FRIEND?",
+          "answer": "Um jogador pilota controlando volante, acelerador e freio, enquanto o copiloto lê as notas de ritmo avisando sobre curvas fechadas, lombadas e mudanças no terreno."
+        },
+        {
+          "question": "Quais são os melhores carros em RALLY WITH A FRIEND?",
+          "answer": "Modelos Turbo AWD do Grupo B e caminhonetes Rally Raid lideram as categorias mais altas pelo poder de arrancada e estabilidade, enquanto carros clássicos atendem às primeiras pistas."
+        },
+        {
+          "question": "Onde encontro códigos válidos de RALLY WITH A FRIEND?",
+          "answer": "Confira nosso guia de códigos da comunidade com os cupons promocionais ativos para resgatar dinheiro no jogo, cargas de nitro, aderência extra e cosméticos."
+        },
+        {
+          "question": "Como desbloqueio novos veículos em RALLY WITH A FRIEND?",
+          "answer": "Conquiste pontuações altas nos trechos, cumpra metas de setor limpo e vença copas para liberar categorias mais velozes, de compactos simples a carros de ponta."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Pronto para correr em RALLY WITH A FRIEND?",
+      "description": "Junte-se aos seus amigos, enfrente pistas desafiadoras e domine cada carro com nossos guias atualizados.",
+      "primary": "Ler o guia de iniciantes",
+      "secondary": "Jogar no Roblox"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Navegação da Wiki",
+    "activeCodes": "Códigos ativos",
+    "updated": "Atualizado",
+    "viewAllCodes": "Ver todos os códigos",
+    "playOnRoblox": "Jogar no Roblox",
+    "inThisSection": "Nesta seção",
+    "tableOfContents": "Índice",
+    "nextSteps": "Próximos passos",
+    "needHelp": "Precisa de ajuda?",
+    "relatedReading": "Leituras relacionadas",
+    "relatedGuides": "Guias relacionados",
+    "readMore": "Ler mais",
+    "officialMedia": "Mídia oficial",
+    "home": "Início",
+    "noGuidesAvailable": "Ainda não há guias disponíveis. Volte em breve!"
+  },
+  "footer": {
+    "aboutTitle": "RALLY WITH A FRIEND Wiki",
+    "about": "RALLY WITH A FRIEND Wiki é um portal independente feito por fãs com dicas de corrida, desafios cooperativos, estatísticas de carros e conhecimentos essenciais para novatos e veteranos.",
+    "quickLinks": "Links rápidos",
+    "guides": "Guias",
+    "legal": "Legal",
+    "copyright": "2026 RALLY WITH A FRIEND Wiki. Não afiliado aos criadores do jogo nem ao Roblox.",
+    "description": "Jogo de corrida multijugador cooperativo no Roblox. Monte sua equipe, acelere junto e supere os desafios.",
+    "playGame": "Jogar RALLY WITH A FRIEND",
+    "officialDiscord": "Discord oficial",
+    "officialYoutube": "YouTube oficial",
+    "vvBuilder": "Guias de veículos",
+    "beginnerGuide": "Guia de iniciantes",
+    "raceGuides": "Guias de veículos",
+    "bossGuides": "Guias de pistas",
+    "buildGuide": "Guia de estratégia",
+    "privacyPolicy": "Política de privacidade",
+    "termsOfService": "Termos de serviço"
+  },
+  "guide": {
+    "overviewTitle": "Guias e tutoriais de RALLY WITH A FRIEND",
+    "overviewDescription": "Tutoriais completos para iniciantes, guia de comandos e dicas de pilotagem para RALLY WITH A FRIEND."
+  },
+  "multiplayer": {
+    "overviewTitle": "Modos multijugador de RALLY WITH A FRIEND",
+    "overviewDescription": "Instruções completas para jogar com amigos, comunicação cooperativa no rali e partidas multijugador em RALLY WITH A FRIEND."
+  },
+  "mechanics": {
+    "overviewTitle": "Mecânicas de jogo de RALLY WITH A FRIEND",
+    "overviewDescription": "Explore mecânicas de corrida, sistema de notas de ritmo, traçados de pistas e dinâmica de direção em RALLY WITH A FRIEND."
+  },
+  "progression": {
+    "overviewTitle": "Progressão e carros de RALLY WITH A FRIEND",
+    "overviewDescription": "Descubra como desbloquear veículos, conquistar metas de trecho e acompanhar sua evolução de corrida em RALLY WITH A FRIEND."
+  },
+  "community": {
+    "overviewTitle": "Comunidade e códigos de RALLY WITH A FRIEND",
+    "overviewDescription": "Conecte-se com a comunidade de RALLY WITH A FRIEND, servidores no Discord, redes sociais e novidades do jogo."
+  },
+  "troubleshooting": {
+    "overviewTitle": "Suporte e solução de problemas de RALLY WITH A FRIEND",
+    "overviewDescription": "Resolva falhas de conexão, erros no convite de amigos e dúvidas comuns de configuração em RALLY WITH A FRIEND."
+  }
+}
