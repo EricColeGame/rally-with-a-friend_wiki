@@ -43,22 +43,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Master driver and co-driver roles, stage pacing, and cockpit synchronization from your first co-op rally stage."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Fastest Progression & Car Unlocks",
+          "description": "Unlock higher-tier rally classes from vintage FWD hatchbacks to Group B turbocharged AWD beasts with top sector ratings."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Redeem Working Codes",
+          "description": "Claim free in-game cash, nitro refills, grip enhancers, and exclusive vehicle liveries before promotional codes expire."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in RALLY WITH A FRIEND."
+          "title": "Controls & Pace Note Callouts",
+          "description": "Learn essential driving keybinds, steering sensitivity, and left-left-left corner severity callout scales."
         }
       ]
     },
@@ -66,237 +66,273 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Car Tier List",
+        "Pace Notes",
+        "Active Codes",
+        "All Stage Guides"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Everything you need from your first launch to mastering tandem racing lines and team communication.",
+          "href": "/guide/rally-with-a-friend-beginner-guide"
         },
         {
           "badge": "Updated",
           "title": "Active Codes",
           "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
-        },
-        {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "href": "/community/rally-with-a-friend-codes"
         },
         {
           "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "title": "Best Cars Tier List",
+          "description": "Top-tier rally vehicles ranked by handling, top speed, and off-road stability.",
+          "href": "/progression/rally-with-a-friend-best-car"
         },
         {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "badge": "Essential",
+          "title": "Controls & Inputs",
+          "description": "Keyboard layouts, gamepad bindings, and co-op dual input configurations.",
+          "href": "/guide/rally-with-a-friend-controls"
+        },
+        {
+          "badge": "Mechanics",
+          "title": "Tracks & Surface Physics",
+          "description": "Master gravel, tarmac, dirt, and mud terrain dynamics across all stages.",
+          "href": "/mechanics/rally-with-a-friend-tracks"
         },
         {
           "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
-        },
-        {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
-        },
-        {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
-        },
-        {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "title": "Achievements Guide",
+          "description": "Complete all co-op milestones, clean sector goals, and championship trophies.",
+          "href": "/progression/rally-with-a-friend-achievements"
         }
       ]
     },
     "aboutGame": {
       "title": "What is RALLY WITH A FRIEND?",
       "paragraphs": [
-        "RALLY WITH A FRIEND is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "RALLY WITH A FRIEND is an adrenaline-fueled cooperative multiplayer racing game on Roblox built around high-speed teamwork, rigorous stage navigation, and authentic rally dynamics. One player takes the steering wheel to navigate unpredictable terrain while the other serves as the co-driver and navigator, delivering crucial pace notes to anticipate hairpins, jumps, and blind crests.",
+        "From vintage front-wheel-drive starters to turbocharged all-wheel-drive Group B beasts, team success depends on seamless communication and throttle control across tarmac, loose gravel, and mud. Our wiki provides complete vehicle catalogs, track surface analysis, control bindings, and stage guides to help your duo dominate the leaderboards."
       ],
       "stats": [
-        {
-          "label": "Developer",
-          "value": "Midnight Continent"
-        },
         {
           "label": "Platform",
           "value": "Roblox"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Co-op Racing"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Team Mode",
+          "value": "2-Player Co-Op"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Stages",
+          "value": "Multi-Surface"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Vehicle Tiers",
+          "value": "5 Classes"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Active Codes",
+          "value": "Updated"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore RALLY WITH A FRIEND Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Master every turn and co-op communication callout with comprehensive vehicle tier lists, track guides, control layouts, and stage strategies.",
       "modules": [
         {
           "order": 1,
-          "name": "RALLY WITH A FRIEND Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/rally-with-a-friend-codes",
-          "displayType": "code-box",
+          "name": "RALLY WITH A FRIEND Beginner Guide",
+          "description": "This module explains the basic gameplay loop, player roles, and how to complete rally stages with a teammate. It covers driving controls, navigation communication, and beginner tips for new players.",
+          "href": "/guide/rally-with-a-friend-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Select vehicle and divide driver and navigator responsibilities before stage launch."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Calibrate audio link or communication shorthand for clean pacenote callouts."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Driver executes throttle, braking, and Scandinavian flick drifts around hairpins."
+            },
+            {
+              "label": "4",
+              "detail": "Cross sector checkpoints together without terminal collision damage to earn gold ratings."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/rally-with-a-friend-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "RALLY WITH A FRIEND Gameplay Guide",
+          "description": "This section provides detailed information about the co-op rally system, including driver and co-driver responsibilities, stage mechanics, and teamwork strategies. It helps players understand how to coordinate effectively during races.",
+          "href": "/guide/rally-with-a-friend-guide",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Driver",
+              "detail": "Controls throttle modulation, weight transfer, and apex trajectory."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "Navigator",
+              "detail": "Delivers advance warning on upcoming hairpins, crests, and road camber."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Co-Op Duo",
+              "detail": "Maintains continuous audio feedback loop to survive high-speed blind sectors."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/rally-with-a-friend-tier-list",
+          "name": "RALLY WITH A FRIEND Cars Guide",
+          "description": "This module focuses on available vehicles, car customization options, and performance differences. Players can learn which cars are suitable for different racing situations and play styles.",
+          "href": "/progression/rally-with-a-friend-best-car",
           "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "S",
+              "detail": "Turbo AWD Group B Hatch and Twin-Turbo Rally Raid Truck with top speed and maximum recovery."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "A",
+              "detail": "90s Turbo Legends and Modern Spec Rally cars offering balanced drift stability."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "B",
+              "detail": "Classic RWD Coupes rewarding precise throttle feathering on dry tarmac."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "C",
+              "detail": "Vintage Cup FWD starters designed for entry-level stage trial learning."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/rally-with-a-friend-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "RALLY WITH A FRIEND Maps Guide",
+          "description": "This section covers rally locations, race stages, environmental conditions, and important track features. It helps players prepare for different routes and navigation challenges.",
+          "href": "/mechanics/rally-with-a-friend-tracks",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "Dry Tarmac",
+              "detail": "High grip coefficient (0.95-1.0) rewarding classic late-apex racing lines."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "Loose Gravel",
+              "detail": "Requires inertial drifts and early throttle application with +35% braking distance."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "Hard Dirt",
+              "detail": "Balanced surface requiring controlled sliding and mid-track throttle stability."
+            },
+            {
+              "label": "Deep Mud",
+              "detail": "Low traction terrain requiring high-rev momentum to avoid ruts and chassis damage."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/rally-with-a-friend-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "RALLY WITH A FRIEND Controls Guide",
+          "description": "This module lists the important controls for drivers and navigators, including steering, communication, and gameplay interactions. It is designed to help players quickly learn the input system.",
+          "href": "/guide/rally-with-a-friend-controls",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "W / Up",
+              "detail": "Primary forward acceleration and throttle modulation on stage runs."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "S / Down",
+              "detail": "Brake pedal and reverse gear engagement for tight hairpin recovery."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "A / D",
+              "detail": "Steering wheel articulation and counter-steering angle control."
+            },
+            {
+              "label": "Spacebar",
+              "detail": "Handbrake lock to initiate high-speed Scandinavian flicks and drift rotations."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/rally-with-a-friend-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "RALLY WITH A FRIEND Updates",
+          "description": "This module collects official updates, new features, balance changes, and content additions. Players can track the latest improvements and upcoming gameplay changes.",
+          "href": "/community/rally-with-a-friend-codes",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Patches",
+              "detail": "Regular balance adjustments to suspension physics, tire grip, and engine response."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "New Stages",
+              "detail": "Additional weather variants including night runs, torrential rain, and dense fog."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Promo Drop",
+              "detail": "Active redeemable codes offering bonus cash, nitro refills, and exclusive cosmetics."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "RALLY WITH A FRIEND Tips and Tricks",
+          "description": "This section shares advanced racing advice, communication techniques, and strategies for achieving better stage times. It targets players looking for ways to improve their teamwork and performance.",
+          "href": "/guide/rally-with-a-friend-tips",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Pace Notes",
+              "detail": "Deliver corner calls 1-2 sectors ahead so the driver can position the car early."
+            },
+            {
+              "label": "Flick Turn",
+              "detail": "Throw weight forward before turning into gravel corners to compress front springs."
+            },
+            {
+              "label": "Damage Cap",
+              "detail": "Avoid aggressive curb clipping to protect radiator health and suspension geometry."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "RALLY WITH A FRIEND Achievements Guide",
+          "description": "This module covers available achievements, badges, and goals players can complete while progressing through the game. It helps completion-focused players track their milestones.",
+          "href": "/progression/rally-with-a-friend-achievements",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Rookie",
+              "detail": "Complete 3 mixed-surface stages with a teammate to earn basic co-op certification."
+            },
+            {
+              "label": "Clubman",
+              "detail": "Achieve zero collision penalties across a grueling 5-stage rally championship."
+            },
+            {
+              "label": "Navigator",
+              "detail": "Record 100% accurate pace note callouts on challenging night stages."
+            },
+            {
+              "label": "Master",
+              "detail": "Earn gold medals in extreme conditions including heavy rain, blizzard, and fog."
             }
           ]
         }
@@ -308,23 +344,23 @@
       "items": [
         {
           "question": "What is RALLY WITH A FRIEND?",
-          "answer": "RALLY WITH A FRIEND is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "RALLY WITH A FRIEND is a cooperative multiplayer racing game on Roblox where two players team up as driver and co-driver to tackle challenging dirt, gravel, and tarmac rally stages."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "How does co-op teamwork work in RALLY WITH A FRIEND?",
+          "answer": "One player manages vehicle steering, throttle, and braking as the driver, while the co-driver reads pace notes and warns of upcoming hairpins, surface changes, and blind crests."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "What are the best cars in RALLY WITH A FRIEND?",
+          "answer": "Turbo AWD Group B models and Rally Raid trucks dominate higher tiers due to high off-road recovery and acceleration, while vintage FWD and RWD cars serve earlier stages."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "Where can I find working RALLY WITH A FRIEND codes?",
+          "answer": "Check our community codes guide for the latest active promo codes to claim in-game cash, nitro refills, grip boosts, and vehicle cosmetics."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "How do I unlock new vehicles in RALLY WITH A FRIEND?",
+          "answer": "Progress through stage ratings, complete clean sector challenges, and earn cup medals to unlock higher vehicle tiers from novice hatchbacks to elite rally beasts."
         }
       ]
     },
