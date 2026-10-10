@@ -19,15 +19,15 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "My Seafood Stand Wiki",
-  shortName: "My Seafood Stand",
-  logoText: "SS",
-  tagline: "Complete Guides, Codes, Recipes & Tier Lists",
-  description: "Your ultimate guide to My Seafood Stand on Roblox! Explore active working codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/my-seafood-stand",
-  heroVideoId: "M8DvcwoFRrk", // Roblox My Seafood Stand codes & gameplay video
+  name: "RALLY WITH A FRIEND Wiki",
+  shortName: "Rally With A Friend",
+  logoText: "R",
+  tagline: "Guides, Vehicles, Tips & Updates",
+  description: "Explore RALLY WITH A FRIEND Wiki for racing guides, gameplay tips, vehicle information, updates, and multiplayer co-op strategies.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://rally-with-a-friend.wiki",
+  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://rally-with-a-friend.wiki").hostname.replace(/^www\./, "")}`,
+  gameUrl: "https://www.roblox.com/games/135718946945419/RALLY-WITH-A-FRIEND",
+  heroVideoId: "mwrXo5_B5i0", // Roblox RALLY WITH A FRIEND gameplay video
   social: {
     discord: "https://discord.gg/roblox",
     youtube: "https://www.youtube.com/@roblox",
